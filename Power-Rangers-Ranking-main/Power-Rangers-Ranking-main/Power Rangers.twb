@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.1014.1036                               -->
+<workbook source-build='2021.2.4 (20212.21.1014.1036)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='PowerRangers' inline='true' name='federated.1so5myb17wdhlh1clr16c0mae2sf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='PowerRangers' name='textscan.0poc1u90uwtg0y15x5mkw02q152n'>
+            <connection class='textscan' directory='C:/Users/amhss/OneDrive/Desktop' filename='PowerRangers.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0poc1u90uwtg0y15x5mkw02q152n' name='PowerRangers.csv' table='[PowerRangers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='season_title' ordinal='0' />
+            <column datatype='integer' name='episode_num' ordinal='1' />
+            <column datatype='string' name='episode_title' ordinal='2' />
+            <column datatype='date' name='air_date' ordinal='3' />
+            <column datatype='real' name='IMDB_rating' ordinal='4' />
+            <column datatype='integer' name='total_votes' ordinal='5' />
+            <column datatype='string' name='desc' ordinal='6' />
+            <column datatype='integer' name='season_num' ordinal='7' />
+            <column datatype='string' name='producer' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0poc1u90uwtg0y15x5mkw02q152n' name='PowerRangers.csv' table='[PowerRangers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='season_title' ordinal='0' />
+            <column datatype='integer' name='episode_num' ordinal='1' />
+            <column datatype='string' name='episode_title' ordinal='2' />
+            <column datatype='date' name='air_date' ordinal='3' />
+            <column datatype='real' name='IMDB_rating' ordinal='4' />
+            <column datatype='integer' name='total_votes' ordinal='5' />
+            <column datatype='string' name='desc' ordinal='6' />
+            <column datatype='integer' name='season_num' ordinal='7' />
+            <column datatype='string' name='producer' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[PowerRangers.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season_title]</local-name>
+            <parent-name>[PowerRangers.csv]</parent-name>
+            <remote-alias>season_title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[episode_num]</local-name>
+            <parent-name>[PowerRangers.csv]</parent-name>
+            <remote-alias>episode_num</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[episode_title]</local-name>
+            <parent-name>[PowerRangers.csv]</parent-name>
+            <remote-alias>episode_title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>air_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[air_date]</local-name>
+            <parent-name>[PowerRangers.csv]</parent-name>
+            <remote-alias>air_date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IMDB_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IMDB_rating]</local-name>
+            <parent-name>[PowerRangers.csv]</parent-name>
+            <remote-alias>IMDB_rating</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_votes]</local-name>
+            <parent-name>[PowerRangers.csv]</parent-name>
+            <remote-alias>total_votes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[desc]</local-name>
+            <parent-name>[PowerRangers.csv]</parent-name>
+            <remote-alias>desc</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season_num]</local-name>
+            <parent-name>[PowerRangers.csv]</parent-name>
+            <remote-alias>season_num</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>producer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[producer]</local-name>
+            <parent-name>[PowerRangers.csv]</parent-name>
+            <remote-alias>producer</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Top 5' datatype='real' name='[Calculation_1013591432686874627]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF RANK(AVG([IMDB_rating])) &lt;= [Parameters].[Parameter 1] THEN AVG([IMDB_rating]) END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='IMDB rating' datatype='real' name='[IMDB_rating]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='PowerRangers.csv' datatype='table' name='[__tableau_internal_object_id__].[PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66]' role='measure' type='quantitative' />
+      <column caption='Air Date' datatype='date' name='[air_date]' role='dimension' type='ordinal' />
+      <column caption='Desc' datatype='string' name='[desc]' role='dimension' type='nominal' />
+      <column caption='Episode Num' datatype='integer' name='[episode_num]' role='dimension' type='ordinal' />
+      <column caption='Episode Title' datatype='string' name='[episode_title]' role='dimension' type='nominal' />
+      <column caption='Producer' datatype='string' name='[producer]' role='dimension' type='nominal' />
+      <column caption='Season Num' datatype='integer' name='[season_num]' role='dimension' type='ordinal' />
+      <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+      <column caption='Total Votes' datatype='integer' name='[total_votes]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Labels' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='5.'>
+          <calculation class='tableau' formula='5.' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='PowerRangers.csv' id='PowerRangers.csv_13CC43CCF9A9408594C2B08454D51C66'>
+            <properties context=''>
+              <relation connection='textscan.0poc1u90uwtg0y15x5mkw02q152n' name='PowerRangers.csv' table='[PowerRangers#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='season_title' ordinal='0' />
+                  <column datatype='integer' name='episode_num' ordinal='1' />
+                  <column datatype='string' name='episode_title' ordinal='2' />
+                  <column datatype='date' name='air_date' ordinal='3' />
+                  <column datatype='real' name='IMDB_rating' ordinal='4' />
+                  <column datatype='integer' name='total_votes' ordinal='5' />
+                  <column datatype='string' name='desc' ordinal='6' />
+                  <column datatype='integer' name='season_num' ordinal='7' />
+                  <column datatype='string' name='producer' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Labels' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='5.'>
+        <calculation class='tableau' formula='5.' />
+      </column>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PowerRangers' name='federated.1so5myb17wdhlh1clr16c0mae2sf' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Labels' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='5.'>
+              <calculation class='tableau' formula='5.' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1so5myb17wdhlh1clr16c0mae2sf'>
+            <column caption='Top 5' datatype='real' name='[Calculation_1013591432686874627]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF RANK(AVG([IMDB_rating])) &lt;= [Parameters].[Parameter 1] THEN AVG([IMDB_rating]) END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='ROUND([IMDB rating],0)' datatype='real' name='[Calculation_1102256049627824135]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='ROUND([IMDB_rating],0)' />
+            </column>
+            <column caption='IMDB rating' datatype='real' name='[IMDB_rating]' role='measure' type='quantitative' />
+            <column caption='Air Date' datatype='date' name='[air_date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1102256049627824135]' derivation='Avg' name='[avg:Calculation_1102256049627824135:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1013591432686874627]' derivation='User' name='[usr:Calculation_1013591432686874627:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[air_date]' derivation='Year' name='[yr:air_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1so5myb17wdhlh1clr16c0mae2sf].[usr:Calculation_1013591432686874627:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#436890' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#aa000067' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1so5myb17wdhlh1clr16c0mae2sf].[avg:Calculation_1102256049627824135:qk]</rows>
+        <cols>[federated.1so5myb17wdhlh1clr16c0mae2sf].[yr:air_date:ok]</cols>
+      </table>
+      <simple-id uuid='{D9312174-1C6C-4995-B8D3-64D2C2BADB9A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card param='[federated.1so5myb17wdhlh1clr16c0mae2sf].[yr:air_date:ok]' type='highlighter' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1so5myb17wdhlh1clr16c0mae2sf].[yr:air_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{886C43E9-6FA2-483D-94A2-8ABB63964809}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

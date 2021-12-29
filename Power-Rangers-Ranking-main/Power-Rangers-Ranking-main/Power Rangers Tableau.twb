@@ -1,0 +1,1403 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.1014.1036                               -->
+<workbook original-version='18.1' source-build='2021.2.4 (20212.21.1014.1036)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='power rangers' inline='true' name='federated.1vtn3as0bxepw41bujz0o1obgd0o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='power rangers' name='textscan.06yjlfh074sgkh17hihfb1bsnf0q'>
+            <connection class='textscan' directory='C:/Users/Joan S/Downloads' filename='power rangers.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.06yjlfh074sgkh17hihfb1bsnf0q' name='power rangers.csv' table='[power rangers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='season_title' ordinal='0' />
+            <column datatype='integer' name='episode_num' ordinal='1' />
+            <column datatype='string' name='episode_title' ordinal='2' />
+            <column datatype='date' name='air_date' ordinal='3' />
+            <column datatype='real' name='IMDB_rating' ordinal='4' />
+            <column datatype='integer' name='total_votes' ordinal='5' />
+            <column datatype='string' name='desc' ordinal='6' />
+            <column datatype='integer' name='season_num' ordinal='7' />
+            <column datatype='string' name='producer' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.06yjlfh074sgkh17hihfb1bsnf0q' name='power rangers.csv' table='[power rangers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='season_title' ordinal='0' />
+            <column datatype='integer' name='episode_num' ordinal='1' />
+            <column datatype='string' name='episode_title' ordinal='2' />
+            <column datatype='date' name='air_date' ordinal='3' />
+            <column datatype='real' name='IMDB_rating' ordinal='4' />
+            <column datatype='integer' name='total_votes' ordinal='5' />
+            <column datatype='string' name='desc' ordinal='6' />
+            <column datatype='integer' name='season_num' ordinal='7' />
+            <column datatype='string' name='producer' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[power rangers.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season_title]</local-name>
+            <parent-name>[power rangers.csv]</parent-name>
+            <remote-alias>season_title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[episode_num]</local-name>
+            <parent-name>[power rangers.csv]</parent-name>
+            <remote-alias>episode_num</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[episode_title]</local-name>
+            <parent-name>[power rangers.csv]</parent-name>
+            <remote-alias>episode_title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>air_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[air_date]</local-name>
+            <parent-name>[power rangers.csv]</parent-name>
+            <remote-alias>air_date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IMDB_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IMDB_rating]</local-name>
+            <parent-name>[power rangers.csv]</parent-name>
+            <remote-alias>IMDB_rating</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_votes]</local-name>
+            <parent-name>[power rangers.csv]</parent-name>
+            <remote-alias>total_votes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[desc]</local-name>
+            <parent-name>[power rangers.csv]</parent-name>
+            <remote-alias>desc</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season_num]</local-name>
+            <parent-name>[power rangers.csv]</parent-name>
+            <remote-alias>season_num</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>producer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[producer]</local-name>
+            <parent-name>[power rangers.csv]</parent-name>
+            <remote-alias>producer</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='IMDB rating' datatype='real' name='[IMDB_rating]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='power rangers.csv' datatype='table' name='[__tableau_internal_object_id__].[power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F]' role='measure' type='quantitative' />
+      <column caption='Air Date' datatype='date' name='[air_date]' role='dimension' type='ordinal' />
+      <column caption='Desc' datatype='string' name='[desc]' role='dimension' type='nominal' />
+      <column caption='Episode Num' datatype='integer' name='[episode_num]' role='dimension' type='ordinal' />
+      <column caption='Episode Title' datatype='string' name='[episode_title]' role='dimension' type='nominal' />
+      <column caption='Producer' datatype='string' name='[producer]' role='dimension' type='nominal' />
+      <column caption='Season Num' datatype='integer' name='[season_num]' role='dimension' type='ordinal' />
+      <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+      <column caption='Total Votes' datatype='integer' name='[total_votes]' role='measure' type='quantitative' />
+      <column-instance column='[Set 1]' derivation='InOut' name='[io:Set 1:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Set 2]' derivation='InOut' name='[io:Set 2:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Set 3]' derivation='InOut' name='[io:Set 3:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Set 4]' derivation='InOut' name='[io:Set 4:nk]' pivot='key' type='nominal' />
+      <column-instance column='[episode_num]' derivation='None' name='[none:episode_num:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[episode_title]' derivation='None' name='[none:episode_title:nk]' pivot='key' type='nominal' />
+      <column-instance column='[air_date]' derivation='Year' name='[yr:air_date:ok]' pivot='key' type='ordinal' />
+      <group hidden='true' name='[Inclusions (Episode Num,Episode Title,IN/OUT(Top 3 Episodes in Worst Season),YEAR(Air Date))]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:episode_num:ok]' />
+          <groupfilter function='level-members' level='[none:episode_title:nk]' />
+          <groupfilter function='level-members' level='[io:Set 3:nk]' />
+          <groupfilter function='level-members' level='[yr:air_date:ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Inclusions (Episode Num,Episode Title,YEAR(Air Date))]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:episode_num:ok]' />
+          <groupfilter function='level-members' level='[none:episode_title:nk]' />
+          <groupfilter function='level-members' level='[yr:air_date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Two Seasons within 1 year' name='[Set 1]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='reorder-dimensionality'>
+          <groupfilter function='union'>
+            <groupfilter function='crossjoin'>
+              <groupfilter function='member' level='[yr:air_date:ok]' member='1994' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[season_title]' member='&quot;Mighty Morphin (Season 1)&quot;' />
+                <groupfilter function='member' level='[season_title]' member='&quot;Mighty Morphin (Season 2)&quot;' />
+              </groupfilter>
+            </groupfilter>
+            <groupfilter function='crossjoin'>
+              <groupfilter function='member' level='[yr:air_date:ok]' member='1996' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[season_title]' member='&quot;Mighty Morphin (Season 3)&quot;' />
+                <groupfilter function='member' level='[season_title]' member='&quot;Zeo&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </groupfilter>
+          <order>
+            <hierarchy name='[season_title]' />
+            <hierarchy name='[yr:air_date:ok]' />
+          </order>
+        </groupfilter>
+      </group>
+      <group caption='Worst Season' name='[Set 2]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='member' level='[season_title]' member='&quot;Samurai&quot;' />
+          <groupfilter function='member' level='[yr:air_date:ok]' member='2011' />
+        </groupfilter>
+      </group>
+      <group caption='Top 3 Episodes in Worst Season' name='[Set 3]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='reorder-dimensionality'>
+          <groupfilter function='crossjoin'>
+            <groupfilter function='member' level='[yr:air_date:ok]' member='2011' />
+            <groupfilter function='union'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[episode_num]' member='2' />
+                <groupfilter function='member' level='[episode_title]' member='&quot;Origins Part 2&quot;' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[episode_num]' member='3' />
+                <groupfilter function='member' level='[episode_title]' member='&quot;The Team Unites&quot;' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[episode_num]' member='19' />
+                <groupfilter function='member' level='[episode_title]' member='&quot;Broken Dreams&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </groupfilter>
+          <order>
+            <hierarchy name='[episode_num]' />
+            <hierarchy name='[episode_title]' />
+            <hierarchy name='[yr:air_date:ok]' />
+          </order>
+        </groupfilter>
+      </group>
+      <group caption='Worst 3 Episodes in the Worst Season' name='[Set 4]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='reorder-dimensionality'>
+          <groupfilter function='crossjoin'>
+            <groupfilter function='member' level='[yr:air_date:ok]' member='2011' />
+            <groupfilter function='union'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[episode_num]' member='10' />
+                <groupfilter function='member' level='[episode_title]' member='&quot;Forest for the Trees&quot;' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[episode_num]' member='12' />
+                <groupfilter function='member' level='[episode_title]' member='&quot;Jayden&apos;s Challenge&quot;' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[episode_num]' member='21' />
+                <groupfilter function='member' level='[episode_title]' member='&quot;Party Monsters&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </groupfilter>
+          <order>
+            <hierarchy name='[episode_num]' />
+            <hierarchy name='[episode_title]' />
+            <hierarchy name='[yr:air_date:ok]' />
+          </order>
+        </groupfilter>
+      </group>
+      <group caption='Top 5 Worst Years' name='[YEAR(Air Date) Set 2]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='union'>
+          <groupfilter function='member' level='[yr:air_date:ok]' member='2011' />
+          <groupfilter function='member' level='[yr:air_date:ok]' member='2012' />
+          <groupfilter function='member' level='[yr:air_date:ok]' member='2013' />
+          <groupfilter function='member' level='[yr:air_date:ok]' member='2014' />
+          <groupfilter function='member' level='[yr:air_date:ok]' member='2018' />
+        </groupfilter>
+      </group>
+      <group caption='Top 5 ' name='[YEAR(Air Date) Set]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='union'>
+          <groupfilter function='member' level='[yr:air_date:ok]' member='1994' />
+          <groupfilter function='member' level='[yr:air_date:ok]' member='1996' />
+          <groupfilter function='member' level='[yr:air_date:ok]' member='1998' />
+          <groupfilter function='member' level='[yr:air_date:ok]' member='1999' />
+          <groupfilter function='member' level='[yr:air_date:ok]' member='2000' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[io:Set 1:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[io:Set 2:nk]' type='palette'>
+            <map to='#a2a2a2'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[io:Set 4:nk]' type='palette'>
+            <map to='#a2a2a2'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='power rangers.csv' id='power rangers.csv_1CF6E79763A94F879F60364CC3FA4B3F'>
+            <properties context=''>
+              <relation connection='textscan.06yjlfh074sgkh17hihfb1bsnf0q' name='power rangers.csv' table='[power rangers#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='season_title' ordinal='0' />
+                  <column datatype='integer' name='episode_num' ordinal='1' />
+                  <column datatype='string' name='episode_title' ordinal='2' />
+                  <column datatype='date' name='air_date' ordinal='3' />
+                  <column datatype='real' name='IMDB_rating' ordinal='4' />
+                  <column datatype='integer' name='total_votes' ordinal='5' />
+                  <column datatype='string' name='desc' ordinal='6' />
+                  <column datatype='integer' name='season_num' ordinal='7' />
+                  <column datatype='string' name='producer' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Power Rangers Performance Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='power rangers' name='federated.1vtn3as0bxepw41bujz0o1obgd0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vtn3as0bxepw41bujz0o1obgd0o'>
+            <column caption='IMDB rating' datatype='real' name='[IMDB_rating]' role='measure' type='quantitative' />
+            <column caption='Air Date' datatype='date' name='[air_date]' role='dimension' type='ordinal' />
+            <column-instance column='[IMDB_rating]' derivation='Avg' name='[avg:IMDB_rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[air_date]' derivation='Year' name='[yr:air_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#aa000067' />
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='solid' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[avg:IMDB_rating:qk]</rows>
+        <cols>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok]</cols>
+      </table>
+      <simple-id uuid='{5E9E5528-0A95-44C5-A203-E396307F23EF}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 5 Years and Corresponding Seasons</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='power rangers' name='federated.1vtn3as0bxepw41bujz0o1obgd0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vtn3as0bxepw41bujz0o1obgd0o'>
+            <column caption='IMDB rating' datatype='real' name='[IMDB_rating]' role='measure' type='quantitative' />
+            <column caption='Air Date' datatype='date' name='[air_date]' role='dimension' type='ordinal' />
+            <column-instance column='[IMDB_rating]' derivation='Avg' name='[avg:IMDB_rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Set 1]' derivation='InOut' name='[io:Set 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[season_title]' derivation='None' name='[none:season_title:nk]' pivot='key' type='nominal' />
+            <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+            <column-instance column='[air_date]' derivation='Year' name='[yr:air_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[YEAR(Air Date) Set]' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok]' direction='DESC' measure-to-sort-by='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[avg:IMDB_rating:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[YEAR(Air Date) Set]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:season_title:nk]' value='132' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 1:nk]' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 1:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[avg:IMDB_rating:qk]</rows>
+        <cols>([federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok] / [federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:season_title:nk])</cols>
+      </table>
+      <simple-id uuid='{873E676C-9ED1-4F54-8900-56ABE87D0011}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 5 Least Performing Seasons</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='power rangers' name='federated.1vtn3as0bxepw41bujz0o1obgd0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vtn3as0bxepw41bujz0o1obgd0o'>
+            <column caption='IMDB rating' datatype='real' name='[IMDB_rating]' role='measure' type='quantitative' />
+            <column caption='Air Date' datatype='date' name='[air_date]' role='dimension' type='ordinal' />
+            <column-instance column='[IMDB_rating]' derivation='Avg' name='[avg:IMDB_rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Set 2]' derivation='InOut' name='[io:Set 2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[season_title]' derivation='None' name='[none:season_title:nk]' pivot='key' type='nominal' />
+            <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+            <column-instance column='[air_date]' derivation='Year' name='[yr:air_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[YEAR(Air Date) Set 2]' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok]' direction='DESC' measure-to-sort-by='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[avg:IMDB_rating:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[YEAR(Air Date) Set 2]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:season_title:nk]' value='114' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 2:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[avg:IMDB_rating:qk]</rows>
+        <cols>([federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok] / [federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:season_title:nk])</cols>
+      </table>
+      <simple-id uuid='{8CA4A2BC-8AEE-4086-8907-66FA0AA81A89}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 3 Episodes of the Worst Season</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='power rangers' name='federated.1vtn3as0bxepw41bujz0o1obgd0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vtn3as0bxepw41bujz0o1obgd0o'>
+            <column caption='IMDB rating' datatype='real' name='[IMDB_rating]' role='measure' type='quantitative' />
+            <column caption='Air Date' datatype='date' name='[air_date]' role='dimension' type='ordinal' />
+            <column-instance column='[IMDB_rating]' derivation='Avg' name='[avg:IMDB_rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Episode Num' datatype='integer' name='[episode_num]' role='dimension' type='ordinal' />
+            <column caption='Episode Title' datatype='string' name='[episode_title]' role='dimension' type='nominal' />
+            <column-instance column='[Set 3]' derivation='InOut' name='[io:Set 3:nk]' pivot='key' type='nominal' />
+            <column-instance column='[episode_num]' derivation='None' name='[none:episode_num:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[episode_title]' derivation='None' name='[none:episode_title:nk]' pivot='key' type='nominal' />
+            <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+            <column-instance column='[air_date]' derivation='Year' name='[yr:air_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[Inclusions (Episode Num,Episode Title,IN/OUT(Top 3 Episodes in Worst Season),YEAR(Air Date))]'>
+            <groupfilter function='reorder-dimensionality' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[yr:air_date:ok]' member='2011' />
+                <groupfilter function='union'>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[io:Set 3:nk]' member='false' />
+                    <groupfilter function='union'>
+                      <groupfilter function='crossjoin'>
+                        <groupfilter function='member' level='[none:episode_num:ok]' member='10' />
+                        <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;Forest for the Trees&quot;' />
+                      </groupfilter>
+                      <groupfilter function='crossjoin'>
+                        <groupfilter function='member' level='[none:episode_num:ok]' member='12' />
+                        <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;Jayden&apos;s Challenge&quot;' />
+                      </groupfilter>
+                      <groupfilter function='crossjoin'>
+                        <groupfilter function='member' level='[none:episode_num:ok]' member='21' />
+                        <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;Party Monsters&quot;' />
+                      </groupfilter>
+                    </groupfilter>
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[io:Set 3:nk]' member='true' />
+                    <groupfilter function='union'>
+                      <groupfilter function='crossjoin'>
+                        <groupfilter function='member' level='[none:episode_num:ok]' member='2' />
+                        <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;Origins Part 2&quot;' />
+                      </groupfilter>
+                      <groupfilter function='crossjoin'>
+                        <groupfilter function='member' level='[none:episode_num:ok]' member='3' />
+                        <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;The Team Unites&quot;' />
+                      </groupfilter>
+                      <groupfilter function='crossjoin'>
+                        <groupfilter function='member' level='[none:episode_num:ok]' member='19' />
+                        <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;Broken Dreams&quot;' />
+                      </groupfilter>
+                    </groupfilter>
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[none:episode_num:ok]' />
+                <hierarchy name='[none:episode_title:nk]' />
+                <hierarchy name='[io:Set 3:nk]' />
+                <hierarchy name='[yr:air_date:ok]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[Set 2]' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_num:ok]' direction='DESC' measure-to-sort-by='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[avg:IMDB_rating:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[Set 2]</column>
+            <column>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[Inclusions (Episode Num,Episode Title,IN/OUT(Top 3 Episodes in Worst Season),YEAR(Air Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 3:nk]' value='Best/Worst(Top 3 Episodes in Worst Season)'>
+              <formatted-text>
+                <run>Best/Worst(Top 3 Episodes in Worst Season)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 3:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[avg:IMDB_rating:qk]</rows>
+        <cols>([federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok] / ([federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_num:ok] / [federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_title:nk]))</cols>
+      </table>
+      <simple-id uuid='{29E2DD37-87D5-4F82-BCBD-0FAA32F17390}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 3 Episodes of the Worst Season</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='power rangers' name='federated.1vtn3as0bxepw41bujz0o1obgd0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vtn3as0bxepw41bujz0o1obgd0o'>
+            <column caption='IMDB rating' datatype='real' name='[IMDB_rating]' role='measure' type='quantitative' />
+            <column caption='Air Date' datatype='date' name='[air_date]' role='dimension' type='ordinal' />
+            <column-instance column='[IMDB_rating]' derivation='Avg' name='[avg:IMDB_rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Episode Num' datatype='integer' name='[episode_num]' role='dimension' type='ordinal' />
+            <column caption='Episode Title' datatype='string' name='[episode_title]' role='dimension' type='nominal' />
+            <column-instance column='[Set 4]' derivation='InOut' name='[io:Set 4:nk]' pivot='key' type='nominal' />
+            <column-instance column='[episode_num]' derivation='None' name='[none:episode_num:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[episode_title]' derivation='None' name='[none:episode_title:nk]' pivot='key' type='nominal' />
+            <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+            <column-instance column='[air_date]' derivation='Year' name='[yr:air_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[Inclusions (Episode Num,Episode Title,YEAR(Air Date))]'>
+            <groupfilter function='reorder-dimensionality' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[yr:air_date:ok]' member='2011' />
+                <groupfilter function='union'>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:episode_num:ok]' member='2' />
+                    <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;Origins Part 2&quot;' />
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:episode_num:ok]' member='3' />
+                    <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;The Team Unites&quot;' />
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:episode_num:ok]' member='10' />
+                    <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;Forest for the Trees&quot;' />
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:episode_num:ok]' member='12' />
+                    <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;Jayden&apos;s Challenge&quot;' />
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:episode_num:ok]' member='19' />
+                    <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;Broken Dreams&quot;' />
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:episode_num:ok]' member='21' />
+                    <groupfilter function='member' level='[none:episode_title:nk]' member='&quot;Party Monsters&quot;' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[none:episode_num:ok]' />
+                <hierarchy name='[none:episode_title:nk]' />
+                <hierarchy name='[yr:air_date:ok]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[Set 2]' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_num:ok]' direction='DESC' measure-to-sort-by='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[avg:IMDB_rating:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[Set 2]</column>
+            <column>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[Inclusions (Episode Num,Episode Title,YEAR(Air Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 4:nk]' value='Best/Worst(Worst 3 Episodes in the Worst Season)'>
+              <formatted-text>
+                <run>Best/Worst(Worst 3 Episodes in the Worst Season)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 4:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[avg:IMDB_rating:qk]</rows>
+        <cols>([federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok] / ([federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_num:ok] / [federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_title:nk]))</cols>
+      </table>
+      <simple-id uuid='{B24CE0F2-3C0F-4F64-B6B4-22B462C237D9}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[:Measure Names]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_num:ok]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:season_num:ok]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:season_title:nk]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{36EBC055-083F-4EE9-B997-37BA5E3B156D}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 1:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[YEAR(Air Date) Set]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:YEAR(Air Date) Set:nk]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:season_num:ok]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:season_title:nk]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5B56841B-1104-4236-BBD1-DAC778EBF2C6}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 2:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[YEAR(Air Date) Set 2]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 2:nk]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:season_title:nk]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4883F950-6886-48FF-B911-8B93B3ABC5FE}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 3:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[Set 2]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 4:nk]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:YEAR(Air Date) Set 2:nk]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_num:ok]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_title:nk]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A6C9A21D-AE32-428C-B521-41942A37B1C7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 4:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight field='[federated.1vtn3as0bxepw41bujz0o1obgd0o].[io:Set 4:nk]'>
+          <color-one-way>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[Set 2]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_num:ok]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[none:episode_title:nk]</field>
+            <field>[federated.1vtn3as0bxepw41bujz0o1obgd0o].[yr:air_date:ok]</field>
+          </color-one-way>
+          <bucket-selection />
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{40D318FE-225E-43F7-89D0-A4909A1AE49D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      /4WQ7AZtM2tjAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      vb2FZfh/GhUBVtzVd5wAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      Aksct4aeT29NAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
